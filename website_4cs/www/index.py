@@ -6,7 +6,7 @@ from frappe.email.doctype.newsletter.newsletter import subscribe
 def get_context(context):
 	title = '4C Solutions'
 	
-	client_images = frappe.get_all("Customer Items", fields="*")
+	client_images = frappe.get_all("Customer", fields=["image"])
 	carousel_items = frappe.get_all("Carousel Items", fields="*")
 	testimonial_items = frappe.get_all("Testimonial Items", fields="*")
 
