@@ -160,7 +160,7 @@
             <div class="owl-carousel clients-carousel">
                 {% if client_images %}
                 {% for client in client_images %}
-                <img src="{{client['image']}}" alt="">
+                <img src="{{client['customer_logo']}}" alt="{{client['customer_name']}}">
                 {% endfor %}
                 {% endif %}
             </div>
