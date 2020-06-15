@@ -206,24 +206,24 @@ h6 {
 
 .intro .intro-title {
   color: #18d26e;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 3rem;
 }
 
 @media (min-width: 768px) {
   .intro .intro-title {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 }
 
 .intro .intro-subtitle {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 @media (min-width: 768px) {
   .intro .intro-subtitle {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
   }
 }
 
