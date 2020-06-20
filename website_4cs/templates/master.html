@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<!-- Built on Frappe. https://frappe.io/ -->
+
 <html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<title>{% block title %} {{ title | striptags }} {% endblock %}</title>
-	<meta name=”robots” content=”nofollow”>
+	<title>4C Solutions - ERP for Digital Transformation</title>	
+	<meta name=”robots” content=”index, follow”>
+	<meta name="author" content="4csolutions.in">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta content="" name="keywords">
-	<meta content="" name="description">
+	<meta name="keywords" content="ERP Software, Healthcare, Education, Fleet Management, Hospital Management,
+	School Management, GPS, Vehicle Tracking, Gulbarga, Kalaburagi">
+	<meta name="description" content="4C Solutions, Our ERP solution supports Healthcare, Education and Fleet Management">
+	<meta name="revisit-after" content="7 days">
+	<!-- Open Graph Protocol -->
+	<meta property="og:title" content="4C Solutions - ERP for Digital Transformation">
+	<meta property="og:description" content="4C Solutions, Our ERP solution supports Healthcare, Education and Fleet Management">
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="4C Solutions"/>
+	<meta property="og:url" content="https://4csolutions.in">
 	<!-- Favicons -->
 	{% block favicon %}
 	<link href="/assets/website_4cs/images/4Cfavicon.ico" rel="icon">
@@ -35,8 +44,7 @@
 	{%- endblock -%}
 
 	<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-	<!-- Uncomment below i you want to use a preloader -->
-	<!-- <div id="preloader"></div> -->
+	<div id="preloader"></div>
 
 	{% block base_scripts %}
 	<!-- js should be loaded in body! -->
@@ -48,7 +56,7 @@
 	{%- for link in web_include_js %}
 	<script type="text/javascript" src="{{ link|abs_url }}"></script>
 	{%- endfor -%}
-	
+
 	{%- block script_4cs %}{%- endblock %}
 </body>
 {% endblock %}
