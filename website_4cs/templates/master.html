@@ -25,6 +25,15 @@
 	{% endblock %}
 
 	{%- block style_4cs %}{%- endblock -%}
+	<script>
+		window.frappe = {};
+		frappe.ready_events = [];
+		frappe.ready = function(fn) {
+			frappe.ready_events.push(fn);
+		}
+		window.dev_server = {{ dev_server }};
+		window.socketio_port = {{ (frappe.socketio_port or 'null') }};
+	</script>
 </head>
 
 {% block body %}
