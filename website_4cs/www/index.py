@@ -1,5 +1,7 @@
 from __future__ import unicode_literals
 import frappe
+from frappe.utils import now
+from frappe import _
 from frappe.email.doctype.newsletter.newsletter import subscribe
 
 
@@ -46,11 +48,9 @@ def send_message(subject="Website Query", message="", sender=""):
 		return
 
 	# send email
-	forward_to_email = frappe.db.get_value(
-	    "Contact Us Settings", None, "forward_to_email")
+	forward_to_email = frappe.db.get_value("Contact Us Settings", None, "forward_to_email")
 	if forward_to_email:
-		frappe.sendmail(recipients=forward_to_email, sender=sender,
-		                content=message, subject=subject)
+		frappe.sendmail(recipients=forward_to_email, sender=sender, content=message, subject=subject)
 
 	# add to to-do ?
 	frappe.get_doc(dict(
